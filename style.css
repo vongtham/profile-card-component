@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --darkgrayishblue: hsl(227, 10%, 46%);
+    --darkgray: hsl(0, 0%, 59%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: var(--darkcyan);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: right 50vw bottom 40vh, left 50vw top 50vh;
+    background-repeat: no-repeat, no-repeat;
+    margin: 0 20px;
+}
+
+img {
+    display: block;
+}
+
+h1, h3 {
+    font-size: 18px;
+    color: var(--Verydarkdesaturatedblue);
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--darkgrayishblue);
+    padding-top: 10px;
+}
+
+span {
+    color: var(--darkgray);
+    font-weight: 400;
+}
+
+p {
+    color: var(--darkgrayishblue);
+    font-size: 10px;
+    padding-top: 5px;
+    letter-spacing: 2px;
+}
+
+.card {
+    max-width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-bg > img {
+    width: 100%;
+}
+
+.card-detail {
+    background: white;
+    text-align: center;
+    position: relative;
+}
+
+.card-owner {
+    border-bottom: 1px solid #dddd;
+    padding: 80px 0 30px;
+}
+
+.card-owner > img {
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%);
+    border: 8px solid white;
+}
+
+.card-status {
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
